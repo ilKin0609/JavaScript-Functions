@@ -51,14 +51,28 @@
 // Task 5
 
 
-function SumOdd(arr) {
-    let sum=0;
+// function SumOdd(arr) {
+//     let sum=0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (typeof arr[i] === "number" && arr[i] % 2 !== 0) {
+//             sum += arr[i];
+//         }
+//     }
+//     return sum;
+// }
+// let arr = [1, 2, 3, 4, 5, 6];
+// console.log(SumOdd(arr));
+
+// Task 6
+
+function CountEven(arr) {
+    let count=0;
     for (let i = 0; i < arr.length; i++) {
-        if (typeof arr[i] === "number" && arr[i] % 2 !== 0) {
-            sum += arr[i];
+        if (typeof arr[i] === "number" && arr[i] % 2 === 0) {
+            count++;
         }
     }
-    return sum;
+    return count;
 }
 let arr = [1, 2, 3, 4, 5, 6];
-console.log(SumOdd(arr));
+console.log(CountEven(arr));
