@@ -37,13 +37,28 @@
 
 // Task 4
 
-function CheckUser(mail, password) {
+// function CheckUser(mail, password) {
 
-    const validMail = "emil@code.edu.az";
-    const validPassword = "12345";
-    if (mail.trim() === validMail && password === validPassword) {
-        return "Login successful";
+//     const validMail = "emil@code.edu.az";
+//     const validPassword = "12345";
+//     if (mail.trim() === validMail && password === validPassword) {
+//         return "Login successful";
+//     }
+//     return "Invalid email or password";
+// }
+// console.log(CheckUser("emil@code.edu.az ", "12345"));
+
+// Task 5
+
+
+function SumOdd(arr) {
+    let sum=0;
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof arr[i] === "number" && arr[i] % 2 !== 0) {
+            sum += arr[i];
+        }
     }
-    return "Invalid email or password";
+    return sum;
 }
-console.log(CheckUser("emil@code.edu.az ", "12345"));
+let arr = [1, 2, 3, 4, 5, 6];
+console.log(SumOdd(arr));
